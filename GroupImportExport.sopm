@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <Name>GroupImportExport</Name>
+    <Version>1.0.0</Version>
+    <Framework>6.x.x</Framework>
+    <Vendor>terreActive AG</Vendor>
+    <URL>http://www.terreactive.ch/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">ImportExport backend for groups</Description>    
+    <Description Lang="de">ImportExport-Backend für Gruppen</Description>    
+    <PackageRequired Version="6.x.x">ImportExport</PackageRequired>
+    <BuildDate>?</BuildDate>
+    <BuildHost>?</BuildHost>
+    <Filelist>
+        <File Permission="644" Location="doc/en/GroupImportExport.pod"/>
+        <File Permission="644" Location="Kernel/Config/Files/XML/GroupImportExport.xml" />
+        <File Permission="644" Location="Kernel/System/ImportExport/ObjectBackend/Group.pm" />
+    </Filelist>
+</otrs_package>

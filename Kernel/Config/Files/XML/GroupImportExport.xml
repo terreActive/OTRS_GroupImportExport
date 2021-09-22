@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Application">
+    <Setting Name="ImportExport::ObjectBackendRegistration###Group" Required="0" Valid="1">
+        <Description Lang="en">Object backend module registration for the import/export modul.</Description>
+        <Description Lang="de">Objekt-Backend Modul Registration des Import/Export Moduls.</Description>
+        <Navigation>ObjectBackend::ModuleRegistration</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::ImportExport::ObjectBackend::Group</Item>
+                <Item Key="Name">Group</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    
+    <Setting Name="GroupImport::ForceCSVMappingRecreation" Required="1" Valid="1">
+        <Description Translatable="1">Defines whether CSV-mappings are re-created on next package reinstallation or upgrade if already existent.</Description>
+        <Navigation>GroupImportExport</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>        
+</otrs_config>
