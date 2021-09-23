@@ -1,0 +1,13 @@
+# OPM Package GroupImportExport
+
+=head1 General
+
+This package provides an CSV-based import/export backend for OTRS group items.
+
+The ImportExport package is required.
+
+The first word of the group nane is used as identifier for existing entries: If a group with the given first word already exists, it will be updated. Otherwise a new group will be created. Except for invalid groups, those will not be created, only updated if they already exist in OTRS.
+
+This software comes with ABSOLUTELY NO WARRANTY. For details, see the enclosed file LICENSE for license information (AGPL). If you did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+
+=cut
